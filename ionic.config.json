@@ -1,0 +1,7 @@
+{
+  "name": "mototaxi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
