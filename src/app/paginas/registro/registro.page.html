@@ -1,9 +1,92 @@
 <ion-header>
   <ion-toolbar color="secondary">
-    <ion-title align="center" >Registro</ion-title>
+    <ion-title align="center" ><h1>Cadastro</h1></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title align= "center">Onde deseja se cadastrar?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Cliente</ion-label>
+          <ion-radio value="cord" slot="start"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Moto Taxista</ion-label>
+        <ion-radio value="duesenberg" slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title align="center">Contato</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" align= "center">Nome</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Senha</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Confirmar Senha</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Telefone</ion-label>
+        <ion-input type="tel-local"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title align="center">Endereço Contato</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" align= "center">Endereço</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Numero</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Bairro</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Complemento</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">CEP</ion-label>
+        <ion-input type="zip-code"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Cidade</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" align= "center">Estado</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="secondary">Salvar</ion-button>
 
 </ion-content>
