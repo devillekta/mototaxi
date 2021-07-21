@@ -3,30 +3,29 @@ import { Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
-import { LoaderPage } from './loader.page';
+import { ChamadosPage } from './chamados.page';
 
-describe('LoaderPage', () => {
-  let component: LoaderPage;
-  let fixture: ComponentFixture<LoaderPage>;
+describe('ChamadosPage', () => {
+  let component: ChamadosPage;
+  let fixture: ComponentFixture<ChamadosPage>;
   let router: Router;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoaderPage ],
+      declarations: [ ChamadosPage ],
       imports: [IonicModule.forRoot(),
-      AppRoutingModule
+      AppRoutingModule,
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LoaderPage);
-    router= TestBed.get(Router);
+    fixture = TestBed.createComponent(ChamadosPage);
+    router = TestBed.get(Router);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
 
-  it('should go to login page after load',() =>{
-    component.ngOnInit();
-
-    expect(router.navigate).toHaveBeenCalledOnceWith(['login']);
+  it('should go to home on create new chamado', () => {
+    component.newChamado();
+    expect(router.navigate).toHaveBeenCalledWith(['home']);
   });
 });

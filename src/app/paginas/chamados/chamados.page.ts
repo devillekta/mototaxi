@@ -1,23 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-chamados',
+  templateUrl: './chamados.page.html',
+  styleUrls: ['./chamados.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class ChamadosPage implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  login(){
+  newChamado(){
     this.router.navigate(['home']);
-  }
-
-  registro(){
-    this.router.navigate(['registro']);
   }
 }

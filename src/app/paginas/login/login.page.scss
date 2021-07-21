@@ -1,7 +1,7 @@
 ion-button [color="dark"]{
-    text-transform: initial ;
+    text-transform: center ;
 }
 
 ion-content {
-    --background: var(--ion-color-tertiary);
+    --background: url("https://viajemcomogarota.000webhostapp.com/ionic/sorveteria/uploads/minas.jpg")no-repeat center center / cover !important;
 }

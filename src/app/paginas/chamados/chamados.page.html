@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title align="center" ><h1>Chamados</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://viajemcomogarota.000webhostapp.com/ionic/sorveteria/uploads/minas.jpg">
+  <ion-card>
+    <ion-card-content>
+      <p>Endereço: Rua Paulino Fernandes, 13</p>
+      <p>Complemento: Banco</p>
+      <p>Bairro: Centro</p>
+      <p>Cidade: Cataguases</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item lines="insert">
+      <ion-label position="floating">Observação:</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button size="full" color="danger" (click)="newChamado()">Criar Chamado</ion-button>
+
+
+</ion-content>

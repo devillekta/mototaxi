@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { AndamentoPageRoutingModule } from './andamento-routing.module';
 
-import { HomePage } from './home.page';
+import { AndamentoPage } from './andamento.page';
 import { ChamadoComponent } from 'src/app/componente/chamado/chamado.component';
 
 @NgModule({
@@ -14,11 +14,11 @@ import { ChamadoComponent } from 'src/app/componente/chamado/chamado.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    AndamentoPageRoutingModule
   ],
   declarations: [
-    HomePage,
+    AndamentoPage,
     ChamadoComponent
   ]
 })
-export class HomePageModule {}
+export class AndamentoPageModule {}

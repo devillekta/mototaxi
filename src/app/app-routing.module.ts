@@ -15,6 +15,14 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./paginas/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'chamados',
+    loadChildren: () => import('./paginas/chamados/chamados.module').then( m => m.ChamadosPageModule)
+  },
+  {
+    path: 'andamento',
+    loadChildren: () => import('./paginas/andamento/andamento.module').then( m => m.AndamentoPageModule)
   }
 ];
 

@@ -8,5 +8,36 @@
 </ion-header>
 
 <ion-content>
+  <ion-list color="tertiary">
+    <ion-item color="tertiary">
+      <ion-avatar slot="start">
+        <img src="https://pbs.twimg.com/profile_images/807761617286995968/AngVhev9_400x400.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h1>Diego Martins</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Ultimas Corridas</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="hourglass-outline" slot="start" color="warning"></ion-icon>
+        <ion-label>
+          Em Espera
+          <p>02/07/2021 11:22:00</p>
+        </ion-label>
+      </ion-item>
+      <ion-button fill="clear" size="full" (click)="goToAndamento()" > Chamados </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" (click)="newChamado()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
